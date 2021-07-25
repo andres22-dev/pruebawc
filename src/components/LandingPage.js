@@ -43,15 +43,37 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <section>
+          <section className="layoutcontainer__benefits">
             <div>
-              <p></p>
+              <p>Entre los <span>beneficios</span> que <span> ofrecemos</span> se encuentran</p>
+            </div>
+            <div>
+              <div>
+                <img src=""/>
+              </div>
+              <div>
+                <img src=""/>
+              </div>
+              <div>
+                <img src=""/>
+              </div>
+              <div>
+                <img src=""/>
+              </div>
             </div>
           </section>
-          <div>
-
+          <div className="layoutcontainer__gratitude">
+            <div>
+              <p>Gracias por <span>completo el ejercicio</span></p>
+              <p>Te Invitamos a ver mas informacion</p>
+            </div>
+            <div>
+              <p>Aqui van de material uiiiiiiiiiiiiiiiiiiiiiii</p>
+            </div>
           </div>
-          <footer></footer>
+          <footer>
+            <img src={BigLogo}/>
+          </footer>
         </div>
     </>
   )
