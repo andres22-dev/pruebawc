@@ -25,15 +25,33 @@ const LandingPage = () => {
             </header>
             
             <div className="planet">
-              <img src={Planet} />
+              <div className="planet__intro">
+                <p>Bienvenido a tu <br />  Entrevista Tecnica en <br />Waco</p>
+              </div>
+              <div className="planet__img">
+                <img src={Planet} />
+              </div>
             </div> 
           </div>
 
           <div className="layoutcontainer__publicity">
-            <div>
-            <img src={Mockups} />
+            <div className="publicity__mockup">
+              <img src={Mockups} />
+            </div>
+            <div className="publicity__vision">
+              <p> Trabajamos para <br /> <span>Convertir ideas</span> en <span> <br /> productos </span></p>
             </div>
           </div>
+
+          <section>
+            <div>
+              <p></p>
+            </div>
+          </section>
+          <div>
+
+          </div>
+          <footer></footer>
         </div>
     </>
   )
