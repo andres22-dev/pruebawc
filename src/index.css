@@ -11,10 +11,11 @@ body {
 }
 
 .layoutcontainer {
-  display: flex;
-  grid-template:  1fr / 650px 400px 550px 530px;
+  display: grid;
+  grid-template:  650px 400px 550px 530px / 1fr ;
   width: auto;
-  justify-content: flex-end;
+  height: 100vh;
+
  
 }
 
@@ -33,16 +34,9 @@ body {
   background-color: rgba(0,0,0, 0.1);
   height: 120px;
   position: fixed;
-  padding: 20px;
   border-bottom: 3px solid #232323;
   
 }
-
-.header__container{
-  display: flex;
-  
-}
-
 .header__logo{
 
   margin-left: 50px
@@ -67,9 +61,11 @@ body {
   margin-left: 10px;
 }
 
+.layoutcontainer__publicity{
 
-.planet p{
-  display: inline-block;
-  position:absolute;
-  color: #FFF;
+  background: linear-gradient(270deg, #00E6E3 2.73%, #00FF68 100%);
+  grid-column: 1;
+  grid-row: 2/3;
+  transform: rotate(-0.5deg);
+
 }
