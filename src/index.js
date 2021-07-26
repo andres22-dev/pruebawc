@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <LandingPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
