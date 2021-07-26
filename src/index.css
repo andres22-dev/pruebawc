@@ -11,11 +11,9 @@ body {
 
 .layoutcontainer {
   display: grid;
-  grid-template:  650px 400px 550px 530px / 1fr ;
+  grid-template:  650px 400px 550px 530px 80px / 1fr ;
   width: auto;
   height: 100vh;
-
- 
 }
 
 .layoutcontainer__home {
@@ -24,54 +22,17 @@ body {
   grid-row: 1;
 }
 
-.header{
-  
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  width:100%;
-  background-color: rgba(0,0,0, 0.1);
-  height: 120px;
-  position: fixed;
-  border-bottom: 3px solid #232323;
-  
-}
-.header__logo{
-
-  margin-left: 50px
-}
-.header__logo img{
-
-  width:150px;
-
-}
-
-.header__menu{
-
-  margin-right: 150px;
-}
-.header__menu ul{
-  display:flex;
-}
-
-.header__menu ul li{
-  color: #FFF;
-  list-style:none;
-  margin-left: 10px;
-}
-
 .planet{
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .planet__intro{
 
-  width: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 260px;
+  left: 200px;
 }
 
 .planet p{
@@ -87,26 +48,89 @@ body {
   grid-column: 1;
   grid-row: 2/3;
   transform: rotate(-0.5deg);
-  display: flex;
-  justify-content: center;
+  
 
 }
 
 .publicity__mockup{
 
   position: absolute;
-  left: 300px;
+  left: 250px;
   bottom: 60px;
 
 }
 
+.publicity__vision {
+  position: absolute;
+  top: 60px;
+  right: 250px;
+}
+
+
 .publicity__vision p{
   font-size: 46px;
-  text-align: left;
+  
 }
 
 
 .layoutcontainer__benefits{
 
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.benefits__description{
   
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.benefits__description p{
+  color: #FFF;
+  font-size: 36px;
+}
+
+.benefits__categories{
+  display: flex;
+  justify-content: space-evenly;
+  height: 350px;
+}
+
+.layoutcontainer__gratitude{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 4/5;
+
+}
+
+.gratitude__description p{
+  text-align: center;
+  color: #FFF;
+}
+.gratitude__description--textone{
+  font-size: 36px;
+}
+.gratitude__description--texttwo{
+  font-size: 28px;
+}
+.layoutcontainer__footer{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #232323;
+  grid-column: 1/2;
+  grid-row: 5/6;
+
+}
+
+.layoutcontainer__footer img{
+  
+  width: 100px;
 }
