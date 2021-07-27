@@ -1,15 +1,14 @@
 import firebase from 'firebase';
-  var firebaseConfig = {
-    apiKey: "AIzaSyCN6gsV4D7M2xCPYUWB0gPd1MEWckWz7TM",
-    authDomain: "tecnicaw-5c837.firebaseapp.com",
-    projectId: "tecnicaw-5c837",
-    storageBucket: "tecnicaw-5c837.appspot.com",
-    messagingSenderId: "597704602079",
-    appId: "1:597704602079:web:5fc7e40839fc1213c3d46a",
-    measurementId: "G-3XWK31WZ20"
-  };
-  // Initialize Firebase
-  const fire = firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
-  export default fire;
+var firebaseConfig = {
+  apiKey: "AIzaSyDeqzLtAlOFQqVzccoFOTNVbffXqrfCVs4",
+  authDomain: "proyectow-cbe96.firebaseapp.com",
+  projectId: "proyectow-cbe96",
+  storageBucket: "proyectow-cbe96.appspot.com",
+  messagingSenderId: "1019594610358",
+  appId: "1:1019594610358:web:ef590fbd58b81e60df7817",
+  measurementId: "G-JEM7E7SNTP"
+};
+const fire = firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+  
+export default fire;
