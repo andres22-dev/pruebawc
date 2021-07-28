@@ -1,25 +1,59 @@
 *{
+   /* COLORES WEB */
+    --color-primario: #fff;
+    --color-secundario: #000;
+    --color-complementario: #00FF68;
+    --color-complementario-dos: #00E6E3;
+  
+   /* COLORES FUENTES */
+  
+    --color-fuente-primario: #fff;
+    --color-fuente-secundario: #202020;
+  
+   /* TAMANO FUENTE */
+    --tamano-fuente-pequeño: 13px;
+    --tamano-fuente-medio: 36px;
+    --tamano-fuente-grande: 46px;
+  
+   /* TIPOS DE FUENTES */
+  
+    --font-family-primaria: 'Averta', sans-serif;
+    --font-family-secundaria: 'Bebas Neue', sans-serif;
+  
+   /* GROSOR DE LAS FUENTES */
+  
+    --font-weight: 580;
+    --font-weight-semi-bold: 700;
+    --font-weight-bold: 800;
+
   margin: 0px;
   box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+  font-family: -apple-system, BlinkMacSystemFont, 'arial';
   font-style: normal;
-  background-color: #0E0E0E;
 }
 
 .layoutcontainer {
   display: grid;
-  grid-template:  650px 400px 550px 530px 80px / 1fr ;
+  grid-template:  650px 400px 550px 530px / 1fr ;
   width: auto;
   height: 100vh;
 }
 
 .layoutcontainer__home {
-  background: #000;
+  background: var(--color-secundario);;
   grid-column: 1/2;
   grid-row: 1;
+}
+
+.layoutcontainer__home .home__logout{
+  right: 0%;
+  background: linear-gradient(270deg, var(--color-complementario-dos) 2.73%, var(--color-complementario) 100%);
+  color: var(--color-fuente-primario);
+  font-weight: var(--font-weight-bold);
+  position: absolute;
 }
 
 .planet{
@@ -35,16 +69,20 @@ body {
   left: 200px;
 }
 
+.planet__intro span{
+  font-weight: var(--font-weight-bold);
+}
+
 .planet p{
 
-  color: #FFF;
-  font-size: 38px;
+  color: var(--color-fuente-primario);
+  font-size: var(--tamano-fuente-grande);
   line-height: 42px;
 }
 
 .layoutcontainer__publicity{
 
-  background: linear-gradient(270deg, #00E6E3 2.73%, #00FF68 100%);
+  background: linear-gradient(270deg, var(--color-complementario-dos) 2.73%, var(--color-complementario) 100%);
   grid-column: 1;
   grid-row: 2/3;
   transform: rotate(-0.5deg);
@@ -66,6 +104,10 @@ body {
   right: 250px;
 }
 
+.publicity__vision span{
+  font-weight: var(--font-weight-bold);
+}
+
 
 .publicity__vision p{
   font-size: 46px;
@@ -79,6 +121,7 @@ body {
   flex-direction: column;
   grid-column: 1/2;
   grid-row: 3/4;
+  background-color: var(--color-secundario);
 }
 
 .benefits__description{
@@ -90,8 +133,23 @@ body {
 
 }
 .benefits__description p{
-  color: #FFF;
-  font-size: 36px;
+  width: 460px;
+  color: var(--color-primario);
+  font-size: var(--tamano-fuente-medio);
+  text-align: center;
+}
+
+.benefits__description--benefits{
+  background: linear-gradient(270deg, var(--color-complementario-dos) 2.73%, var(--color-complementario) 100%);
+  transform: rotate(-0.5deg);
+  padding: 8px;
+  color: var(--color-secundario);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.benefits__description--offer{
+
+  font-weight: var(--font-weight-bold);
 }
 
 .benefits__categories{
@@ -108,29 +166,53 @@ body {
   align-items: center;
   grid-column: 1/2;
   grid-row: 4/5;
+  background-color: var(--color-secundario);
 
 }
 
 .gratitude__description p{
   text-align: center;
-  color: #FFF;
+  color: var(--color-primario);
 }
 .gratitude__description--textone{
-  font-size: 36px;
+  font-size: var(--tamano-fuente-medio);
+}
+.gratitude__description--textone span{
+  color: var(--color-complementario);
 }
 .gratitude__description--texttwo{
   font-size: 28px;
 }
-.layoutcontainer__footer{
+
+.gratitude__more {
+  width: 300px;
+  height: 100px;
   display: flex;
-  justify-content: center;
-  border-top: 2px solid #232323;
-  grid-column: 1/2;
-  grid-row: 5/6;
-
+  justify-content: space-between;
+  align-items: center;
 }
 
-.layoutcontainer__footer img{
+.more__instagram{
   
-  width: 100px;
+  width: 200px;
+  color: var(--color-complementario);
+  
 }
+
+.gratitude__more button{
+  width: 180px;
+  background: linear-gradient(270deg, var(--color-complementario-dos) 2.73%, var(--color-complementario) 100%);
+  border-radius: 20px;
+
+
+}
+
+.gratitude__more button a{
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-size: var(--tamano-fuente-pequeño);
+  font-weight: var(--font-weight-semi-bold);
+
+}
+
+

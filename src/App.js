@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import fire from './fire';
 import Login from './components/Login';
+import LandingPage from './components/LandingPage';
 import './App.css';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
     clearErrors();
     fire
       .auth()
-      .singInWithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(email, password)
       .catch((err) =>{
         switch(err.code){
           case "auth/invalid-email":
@@ -80,7 +81,10 @@ function App() {
   }, []);
   return (
     <>
-      <Login 
+      {user ?(
+        <LandingPage handleLogout={handleLogout}/>
+      ): (
+        <Login 
         email={email} 
         setEmail={setEmail} 
         password={password} 
@@ -92,6 +96,8 @@ function App() {
         emailError={emailError}
         passwordError={passwordError}
       />
+      )}
+      
     </>
   );
 }

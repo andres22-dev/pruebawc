@@ -8,22 +8,25 @@ import HomeOffice from '../assets/img/HomeOffice.svg';
 import Training from '../assets/img/Training.svg';
 import Snacks from '../assets/img/Snacks.svg';
 import Button from '@material-ui/core/Button';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import Header from './Header';
+import Footer from './Footer';
 
 
-const LandingPage = () => {
+const LandingPage = ({ handleLogout }) => {
 
   return (
     <>
         <div className="layoutcontainer">
           <div className="layoutcontainer__home">
-            <Header />
+            <Header></ Header>
+            <Button className="home__logout" onClick={handleLogout}>Logout</Button>
             <div className="planet">
             <div className="planet__img">
                 <img src={Planet} />
               </div>
               <div className="planet__intro">
-                <p>Bienvenido a tu <br />  Entrevista Tecnica en <br />Waco</p>
+                <p>Bienvenido a tu <br />  <span> Entrevista Tecnica </span> en <br />Waco</p>
               </div>
               
             </div> 
@@ -42,7 +45,7 @@ const LandingPage = () => {
 
           <section className="layoutcontainer__benefits">
             <div className="benefits__description">
-              <p>Entre los <span>beneficios</span> que <span> ofrecemos</span> se encuentran</p>
+              <p>Entre los <span className="benefits__description--benefits">beneficios</span> que <span className="benefits__description--offer"> ofrecemos</span> se encuentran</p>
             </div>
             <div className="benefits__categories">
               <div>
@@ -61,16 +64,15 @@ const LandingPage = () => {
           </section>
           <div className="layoutcontainer__gratitude">
             <div className="gratitude__description">
-              <p className="gratitude__description--textone">Gracias por <span>completo el ejercicio</span></p>
+              <p className="gratitude__description--textone">Gracias por <span>completar el ejercicio</span></p>
               <p className="gratitude__description--texttwo">Te Invitamos a ver mas informacion</p>
             </div>
-            <div>
-              <p>Aqui van de material uiiiiiiiiiiiiiiiiiiiiiii</p>
+            <div className="gratitude__more">
+              <InstagramIcon className="more__instagram" />
+              <Button><a href="https://wacoservices.com/">Conoce mas</a></Button>
             </div>
           </div>
-          <footer className="layoutcontainer__footer">
-            <img src={BigLogo}/>
-          </footer>
+        <Footer />
         </div>
     </>
   )
