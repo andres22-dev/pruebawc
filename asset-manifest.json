@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pruebawc/static/css/main.5d19be1a.chunk.css",
+    "main.js": "/pruebawc/static/js/main.0f6d353c.chunk.js",
+    "main.js.map": "/pruebawc/static/js/main.0f6d353c.chunk.js.map",
+    "runtime-main.js": "/pruebawc/static/js/runtime-main.1ca81ead.js",
+    "runtime-main.js.map": "/pruebawc/static/js/runtime-main.1ca81ead.js.map",
+    "static/js/2.9ed8f479.chunk.js": "/pruebawc/static/js/2.9ed8f479.chunk.js",
+    "static/js/2.9ed8f479.chunk.js.map": "/pruebawc/static/js/2.9ed8f479.chunk.js.map",
+    "static/js/3.c88abaf1.chunk.js": "/pruebawc/static/js/3.c88abaf1.chunk.js",
+    "static/js/3.c88abaf1.chunk.js.map": "/pruebawc/static/js/3.c88abaf1.chunk.js.map",
+    "index.html": "/pruebawc/index.html",
+    "static/css/main.5d19be1a.chunk.css.map": "/pruebawc/static/css/main.5d19be1a.chunk.css.map",
+    "static/js/2.9ed8f479.chunk.js.LICENSE.txt": "/pruebawc/static/js/2.9ed8f479.chunk.js.LICENSE.txt",
+    "static/media/BigLogo.72410cc5.svg": "/pruebawc/static/media/BigLogo.72410cc5.svg",
+    "static/media/HomeOffice.05aba106.svg": "/pruebawc/static/media/HomeOffice.05aba106.svg",
+    "static/media/MockupProducts.ac5739ea.svg": "/pruebawc/static/media/MockupProducts.ac5739ea.svg",
+    "static/media/Planet.ceaf716a.svg": "/pruebawc/static/media/Planet.ceaf716a.svg",
+    "static/media/Snacks.96707a35.svg": "/pruebawc/static/media/Snacks.96707a35.svg",
+    "static/media/Training.446d1299.svg": "/pruebawc/static/media/Training.446d1299.svg",
+    "static/media/Watch.cca27ff7.svg": "/pruebawc/static/media/Watch.cca27ff7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ca81ead.js",
+    "static/js/2.9ed8f479.chunk.js",
+    "static/css/main.5d19be1a.chunk.css",
+    "static/js/main.0f6d353c.chunk.js"
+  ]
+}
